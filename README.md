@@ -8,9 +8,9 @@ If your Flutter environment is not setup, see the getting started[ getting start
 
 #### Main files
 
-- $ home.dart - Homepage containing the list of hotels.
-- $ detail.dart - Page containing the detail of a selected hotel.
-- $ favourites.dart - Page containing a list of user's favourite hotels.
+- home.dart - Homepage containing the list of hotels.
+- detail.dart - Page containing the detail of a selected hotel.
+- favourites.dart - Page containing a list of user's favourite hotels.
 
 #### Installation 
 In the command terminal, run the following commands:
