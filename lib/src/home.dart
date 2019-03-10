@@ -22,7 +22,22 @@ class HomeState extends State<Home> {
               icon: const Icon(Icons.favorite_border), onPressed: _pushSaved),
         ],
       ),
-      body: _buildSuggestions(),
+      body: createHotelList(),
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: Colors.black,
+        onPressed: () {
+          setState(() {
+            if(this.hotels[0].stars<this.hotels[this.hotels.length -1].stars){
+              this.hotels.sort((a, b) => b.stars-a.stars);
+            }else{
+              this.hotels.sort((a, b) => a.stars-b.stars);
+            }
+
+          });
+        },
+        icon: Icon(Icons.star,color: Colors.pinkAccent),
+        label: Text("Order by stars"),
+      ),
     );
   }
 
@@ -33,7 +48,7 @@ class HomeState extends State<Home> {
     );
   }
 
-  Widget _buildSuggestions() {
+  Widget createHotelList() {
     return ListView.separated(
         itemCount: hotels.length,
         separatorBuilder: (context, index) => Divider(
