@@ -14,7 +14,7 @@ class Services {
 
     } else {
       // If that response was not OK, throw an error.
-      throw  Exception('Failed to load post');
+      throw   Exception('Failed to load post');
     }
   }
 
