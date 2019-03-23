@@ -40,7 +40,7 @@ class Location {
   String address;
   double latitude;
   double longitude;
-
+  double test;
   Location({this.city, this.address, this.latitude, this.longitude});
 
   factory Location.fromJson(Map<String, dynamic> json) {
