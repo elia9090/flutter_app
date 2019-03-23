@@ -14,7 +14,7 @@ If your Flutter environment is not setup, see the getting started[ getting start
 
 #### Installation 
 In the command terminal, run the following commands:
-- $ git clone https://github.com/siber88/flutter_app.git 
+- $ git clone https://github.com/elia9090/flutter_app.git 
 - $ cd flutter_app/ 
 - $ flutter run
 
